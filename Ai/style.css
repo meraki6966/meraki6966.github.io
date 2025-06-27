@@ -1,0 +1,54 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Card Styles & Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Interactive Step Diagram Styles */
+.step-circle {
+    transition: all 0.3s ease;
+}
+
+.step-circle.active {
+    background-color: #3b82f6;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Step Content Visibility */
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+/* FAQ Accordion Styles */
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.faq-item.open .answer {
+    max-height: 500px; /* Adjust as needed for content */
+}
+
+/* FAQ Icon Rotation on Open/Close */
+ .faq-item.open .icon {
+    transform: rotate(45deg);
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
